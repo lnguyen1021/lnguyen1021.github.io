@@ -1,9 +1,3 @@
-# lnguyen1021.github.io
+# Linh D. Shinguyen - Data Scientist Portfolio
 
-test github pages
-
-# test heading 1
-this is a test paragraph.  
-here is another test paragraph.  
-
-> block quote to test
+This is a professional portfolio for Linh D. Shinguyen, a data scientist specializing in healthcare data, machine learning, and data visualization. The site is built using GitHub Pages and Jekyll.
