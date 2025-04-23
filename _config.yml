@@ -1,6 +1,6 @@
 title: Linh D. Shinguyen - Data Scientist Portfolio
 description: Professional portfolio of Linh D. Shinguyen, a data scientist specializing in healthcare data, machine learning, and data visualization.
-baseurl: "https://lnguyen1021.github.io" # Leave empty if hosting at root, otherwise set to "/repo-name"
+baseurl: "" # Leave empty if hosting at root, otherwise set to "/repo-name"
 url: "https://lnguyen1021.github.io/" # Replace with your GitHub Pages URL
 theme: jekyll-theme-minimal
 plugins:
