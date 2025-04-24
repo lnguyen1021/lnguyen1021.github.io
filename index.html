@@ -51,9 +51,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-            </li>
+            </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
           </li>
@@ -346,61 +346,49 @@
             <li>Tableau</li>
             <li>Version control(Git)</li>
             <li>MongoDB</li>
-            <li>mySQL</li>
+            <li>SQL</li>
             <li>Excel VBA</li>
             <li>HTML & CSS</li>
-            <li>Flask</li>
+            <li>Snowflake</li>
           </ul>
         </div>
         <div class="subheading mb-3">Technical</div>
         <ul class="fa-ul mb-0">
+          <li>Machine Learning</li>
+          <li>Image segmentation (DL, CNN)</li>
           <li>Data analysis</li>
           <li>Data wrangling</li>
           <li>Data storage and retrieval</li>
           <li>Data visualization</li>
-          <li>Machine Learning (classification and regression)</li>
-          <li>MapReduce</li>
+          <li>Shell scripting</li>
+          <li>Geospatial analysis</li>
+          <li>Timeseries analysis</li>
+          <li>ETL</li>
+        </ul>
+        <div class="subheading mb-3">Soft</div>
+        <ul>
+          <li>Independent</li>
+          <li>Self-starter</li>
+          <li>Detail oriented</li>
+          <li>Problem solver</li>
+          <li>Data story teller</li>
         </ul>
       </section>
 
-      <hr class = "m-0"> 
+      <!-- <hr class = "m-0">  -->
       <!-- PROJECTS -->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
 
-          <!-- <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Project Title</h3>
-              <div>
-                <p>Description of project</p>
-                <a target="_blank"  href="#">View Project Repo</a>
-                 <div clas="col-md-6">
-                  <div class="thumbnail">
-                    <a target="" href="#"><img src="#"></a>
-                  <div class="resume-content mr-auto">Captions here
-                  </div>
-                </div>
-              </div> 
-              <div clas="col-md-6">
-                <div class="thumbnail">
-                  <a target="_blank" href="#"><img src="#"></a>
-                <div class="resume-content mr-auto">Captions here
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
 
-          <!-- Project 1 -->
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Twitter User Sentiment Analysis</h3>
               <div>
                 <p>I was curious about the sentiment of different news organizations' twitter accounts (i.e. how positive, negative, or neutral their tweets are). For this project, I used tweepy, a python library, to access Twitter's API. Using tweepy, I collected 100 of the most recent tweets from 5 different news organization. A VANDER sentiment analysis was used analyze each individual tweet and the sentiment score was plotted using matplotlib in python. </p>
                 <a target="_blank" href="https://github.com/lnguyen1021/social_analytics">View Project Repo</a>
-                <!-- SS here -->
+
                 <div clas="col-md-2">
                   <div class="thumbnail">
                     <svg width='450' height='300'>
@@ -410,7 +398,7 @@
                   </div>
                 </div>
               </div>
-              <!-- SS here -->
+
               <div clas="col-md-2">
                 <div class="thumbnail">
                   <svg width='450' height='300'>
@@ -424,14 +412,14 @@
           </div>
         </div>
         <hr>
-            <!-- Project 2 -->
+
             <div class="resume-item d-flex flex-column flex-md-row">
               <div class="resume-content mr-auto">
                 <h3 class="mb-0">Belly Button Biodiversity</h3>
                 <div>
                   <p>Using a dataset published by <a target="_blank" href="http://robdunnlab.com/projects/belly-button-biodiversity/">Rob Dunn,</a> a simple dashboard was created using a sqlite database, flask, javascript, and python. The task was to query the database and create a piechart and bubble chart of the sample data using plotly.js.</p>
                   <a target="_blank"  href="https://github.com/lnguyen1021/BiodiversityDashboard">View Project Repo</a>
-                  <!-- SS here -->
+
                   <div clas="col-md-6">
                     <div class="thumbnail">
                       <svg width='450' height='300'>
@@ -445,7 +433,7 @@
             </div>
           </div>
           <hr>
-          <!-- Project 3 -->
+
           <div class="resume-item d-flex flex-column flex-md-row">
               <div class="resume-content mr-auto">
                 <h3 class="mb-0">Machine Learning using a Hepatitis Dataset</h3>
@@ -453,7 +441,7 @@
                   <p>For this project, we used a <a target="_blank" href = "
                     https://www.openml.org/d/269">dataset</a> from openml.org with twenty features and one million entries to train our model to predict whether an individual who is hepatitis positive is at risk for a life-threatening condition. We were able to train the model using tensorflow, keras, and scikit-learn. After exploring several algorithms, we found a random forest produced the highest accuracy score of 93%. Using tableau desktop, we created a simple tool that allows hepatitis positive users to input several fields and will predict an individuals risk of a life-threatening condition.</p>
                   <a target="_blank"  href="https://github.com/xaskoiking/Team_Red_Zone_Final_Project">View Project Repo</a>
-                  <!-- SS here -->
+
                   <div clas="col-md-6">
                     <div class="thumbnail">
                         <svg width='450' height='300'>
@@ -463,14 +451,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- SS here -->
-                <!-- <div clas="col-md-6">
-                  <div class="thumbnail">
-                    <a target="_blank" href="#"><img src="#"></a>
-                  <div class="resume-content mr-auto">Captions here
-                  </div>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -479,7 +459,7 @@
             <div class="resume-content mr-auto">
               <h4 class="mb-0"><a target="_blank" href="https://github.com/lnguyen1021?tab=repositories">Click here for more projects</a></h4>
             </div>
-          </div>
+          </div> -->
           <!-- Project templates -->
 <!--        
           <div class="resume-item d-flex flex-column flex-md-row">
@@ -507,7 +487,7 @@
             </div>
           </div>
         </div> -->
-      </section>
+      <!-- </section> -->
 
       <hr class="m-0">
       <!-- PUBLICATIONS -->
