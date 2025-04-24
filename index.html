@@ -1,41 +1,562 @@
-<!-- index.html -->
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="row">
-    <div class="col-md-4 text-center">
-        <img src="{{ site.baseurl }}/assets/img/profile.jpg" alt="Linh D. Shinguyen" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
-        <h1>Linh D. Shinguyen, M.S.</h1>
-        <p>Data Scientist</p>
-    </div>
-    <div class="col-md-8">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Inquisitive data scientist with 8 years of experience working with various data types ranging from FHIR data, CT imaging data, and textual data, and has proven expertise collaborating with and leading cross-functional teams; working with complex health data and finding data-driven solutions; and communicating data-driven storytelling.</p>
-        <a href="{{ site.baseurl }}/about" class="btn btn-primary">Learn More About Me</a>
-    </div>
-</div>
+  <head>
 
-<div class="row mt-5">
-    <div class="col-md-4">
-        <h3>Core Competencies</h3>
-        <ul class="list-unstyled">
-            <li><i class="fas fa-check"></i> Python, R, SQL, Git, Snowflake, FHIR</li>
-            <li><i class="fas fa-check"></i> Data Visualization & Analysis</li>
-            <li><i class="fas fa-check"></i> Data Storytelling</li>
-            <li><i class="fas fa-check"></i> Machine Learning & Deep Learning</li>
-            <li><i class="fas fa-check"></i> Computer Vision & NLP</li>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Linh Shinguyen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+    <!-- Adding favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/LN_Favicon.png">
+  </head>
+
+  <body id="page-top">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Linh Nguyen</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            </li> -->
         </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+  <!-- ABOUT ME -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Linh
+            <span class="text-primary">Shinguyen</span>
+          </h1>
+          <div class="subheading mb-5">Rockville Maryland · (678) 634-8536 ·
+            <a href="mailto:lnguyen1021@gmail.com">lnguyen1021@gmail.com</a>
+            <br>
+            <a target = "_blank" href="resume/LS-CV-2025.pdf">Click here for pdf resume</a>
+          </div>
+          <p class="lead mb-5">Inquisitive data scientist with 8 years of experience working with various data types ranging from FHIR data, CT imaging data, and textual data, and has proven expertise collaborating with and leading cross-functional teams; working with complex health data and finding data-driven solutions; and communicating data-driven storytelling.</p>
+          <div class="social-icons">
+            <a target = "_blank" href="https://www.linkedin.com/in/shinguyenlinh/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target = "_blank" href="https://github.com/lnguyen1021">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+      <!-- EXPERIENCE -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+          <!-- EXAMPLE  -->
+          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">TITLE</h3>
+              <div class= "subheading mb-3"><p>COMPANY
+              </p></div>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+            <div class="resume-date text-md-right"> 
+              <span class="text-primary">May 2020 – August 2020</span>
+            </div>
+          </div> -->
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Data Scientist</h3>
+              <div class= "subheading mb-3"><p>Health Resources and Services Administration
+                <br> Bureau of Primary Health Care | Office of Strategic Business Operations
+              </p></div>
+              <div class="subheading mb-4>"><p>UDS+ Data Modernization Technical Lead</p></div>
+              <ul>
+                <li>Served as the data lake house team technical lead in support of UDS+ Modernization efforts, enabling data-driven health outcome improvements for Health Center program awardees nationwide.</li>
+                <li>Co-led project initiatives by facilitating technical discussions between development teams and senior leadership, ensuring alignment and timely achievement of key contracting milestones.</li>
+                <li>Collaborated with the contracting team to optimize data architecture for ingesting UDS+ FHIR data into Snowflake, resulting in a scalable solution capable of processing millions of healthcare records efficiently.</li>
+                <li>Co-managed the end-to-end ingestion process of preliminary UDS+ data from 80 volunteer health center awardees, successfully loading over 30 million records into Snowflake for initial analysis.</li>
+            </ul>
+            <div class="subheading mb-4>"><p>UDS+ Personal Health Information (PHI) Detection Project Lead</p></div>
+            <ul>
+              <li>Led a team of 2 junior data scientists to design and implement a solution for detecting potential Protected Health Information (PHI) within UDS+ FHIR data, ensuring adherence to Safe Harbor Guidelines.</li>
+              <li>Architected and developed a scalable PHI detection framework using Python and Snowflake, integrating NER modeling with custom regular expressions to efficiently identify sensitive patient information.</li>
+              <li>Successfully identified and confirmed over 2 million records containing PHI, as defined by Safe Harbor Guidelines and additional specifications from the UDS+ FHIR Implementation Guide, significantly enhancing data privacy and compliance.</li>
+            </ul>
+            <div class="subheading mb-4>"><p>UDS+ & Data Lake House Liaison for Data Division Business Intelligence (BI) Team</p></div>
+            <ul>
+              <li>Delivered expert technical support to 4 BI team members across multiple projects, ensuring seamless access to UDS+ data and data lake house resources while troubleshooting complex integration challenges.</li>
+              <li>Engineered and implemented the Salesforce ticketing data pipeline into Snowflake, enabling the BI team to develop comprehensive service metrics dashboards in Tableau.</li>
+              <li>Strategically curated and optimized UDS+ tables in Snowflake that powered 3 executive summary dashboards, providing critical program insights to division, office, and bureau leadership.</li>
+              <li>Conducted targeted ad hoc data analysis for senior leadership, transforming raw UDS+ submissions into actionable intelligence that informed strategic decisions about Health Center program operations.</li>
+            </ul>
+            <div class="subheading mb-4>"><p>UDS+ Electronic Clinical Quality Measure (eCQM) Project Lead</p></div>
+            <ul>
+              <li>Directed a team comprising 2 junior data scientists and contracting personnel to develop scalable solutions in Snowflake for calculating 6 electronic Clinical Quality Measures (eCQMs 122, 124, 125, 130, 165, 349) according to guidelines from the Centers for Medicare & Medicaid Services (CMS).</li>
+              <li>Partnered with the contracting team to architect and execute dynamic tables in Snowflake that automatically identified patient-level UDS+ data meeting eCQM inclusion/exclusion criteria and transformed individual data points into comprehensive health center-level performance measures.</li>
+              <li>Generated and distributed technical reports detailing performance on 6 key eCQMs to all health centers that voluntarily submitted UDS+ data, providing valuable insights into quality measure adherence.</li>
+            </ul>  
+            </div>
+            <div class="resume-date text-md-right"> 
+              <span class="text-primary">December 2023 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <!-- Title -->
+              <h3 class="mb-0">Data Science Fellow</h3>
+              <!-- Company -->
+              <div class= "subheading mb-3"><p>National Institute for Allergy and Infectious Diseases
+              </p></div>
+              <div class="subheading mb-4>"><p>Emerging Leaders in Data Science Fellowship</p></div>
+              <!-- Description -->
+              <div class="subheading mb-4>"><p>Module Development and Comparison of nnUNet and Deep Learning Medical Image Segmentation (DMIST) Models for Lung Lesion Segmentation</p></div>
+                <ul>
+                    <li>Engineered and implemented a comprehensive model comparison module in collaboration with IRF data scientists, enabling quantitative evaluation and systematically monitoring of deep learning model segmentation performance across multiple infection types and organ systems.</li>
+                    <li>Leveraged Git and GitHub for version control and streamlined collaboration throughout the development lifecycle of the model comparison module.</li>
+                    <li>Redesigned researcher and radiologist workflow by consolidating submission requirements from 4 files to a single file, reducing process complexity and accelerating model comparison initiation by 75%.</li>
+                    <li>Authored a script to automate the collation of CT prediction files organized into a consistent directory structure, enabling efficient visual comparison and analysis of segmentation results.</li>
+                    <li>Implemented and integrated a benchmark model (nnUNET) to establish baseline lung lesion prediction performance for models developed via the DMIST pipeline, enabling objective performance assessment.</li>
+                </ul>
+                <div class="subheading mb-4>"><p>Deep Learning CT Segmentation Model Comparisons: UNET, UNETR, Swin-UNETR</p></div>
+                <ul>
+                    <li>Built and evaluated 3 deep learning architectures to perform image segmentation analysis on 94 non-human primate lung CT scans infected with SARS-COV2 to support critical infectious disease research.</li>
+                    <li>Applied the Swin-UNETR deep learning algorithm for SARS-COV-2 lung lesion segmentation in CT scans, achieving 61% accuracy despite the challenging nature of pathological tissue identification.</li>
+                    <li>Trained a UNETR deep learning model for human lung segmentation in CT images, attaining an accuracy of 98%.</li>
+                    <li>Improved Swin-UNETR lung lesion segmentation model performance on human CT scans by 10% through the implementation and evaluation of transfer learning techniques, comparing pretrained and non-pretrained models.</li>
+                    <li>Collaborated directly with junior radiologists to gather precise ground truth annotations, leading to enhanced CT segmentation model accuracy and reliability through high-quality training data.</li>
+                </ul>
+                <div class="subheading mb-4>"><p>Multimodal Analysis of Multiple Sclerosis</p></div>
+                <ul>
+                    <li>Conducted exploratory data analysis on multi-modal omics data (patient demographics, immunophenotyping, bulk RNA sequencing, Somamer scan) from cerebrospinal fluid to characterize individuals with multiple sclerosis (MS).</li>
+                    <li>Applied dimension reduction and clustering techniques (UMAP, t-SNE, PCA) to try and identify key features distinguishing 41 MS patients from 40 controls, informing the understanding of disease differentiation.</li>
+                </ul>
+                <div class="subheading mb-4>"><p>Prognostic Modeling of Post-Acute Sequelae of SARS-Cov-2 (PASC)</p></div>
+                <ul>
+                    <li>Assisted in univariate analysis to characterize differences among individuals who developed post-acute sequelae of SARS-COV-2 (PASC) and those who did not among persons infected with COVID-19.</li>
+                    <li>Developed and interpreted random forest and elastic net models utilizing Shapley values to explore predictive risk factors and diagnostic indicators associated with PASC.</li>
+                </ul>
+                <div class="subheading mb-4>"><p>Estimation of Data Generation from Grants Utilizing Research Performance Progress Reports (RPPRs): A Pilot Natural Language Processing (NLP) Project</p></div>
+                <ul>
+                    <li>Collected, wrangled, and meticulously cleaned 900 unstructured NIAID RPPR documents to establish a gold standard corpus, enabling the development of robust Natural Language Processing (NLP) models.</li>
+                    <li>Extracted "data generated" entities from 250 grant documents to curate a high-quality training dataset for NLP applications.</li>
+                    <li>Developed a Named Entity Recognition (NER) model to automatically classify RPPR documents based on "data generated" criteria, providing insights into the NIAID data landscape.</li>
+                </ul>
+            </div>
+            <!-- Date -->
+            <div class="resume-date text-md-right"> 
+              <span class="text-primary">September 2021 – November 2023</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Database and Marketing Analytics Intern</h3>
+              <div class= "subheading mb-3"><p>Tractor Supply Company
+              </p></div>
+              <ul>
+                <li>Redesigned and optimized 5 complex Tableau Desktop dashboards into 7 mobile-responsive analytics solutions, enabling C-suite executives to access critical business metrics seamlessly across mobile devices.</li>
+                <li>Improved marketing department analysts' workflows by optimizing 5 key performance metric calculations, resulting in more efficient data processing and analysis.</li>
+                <li>Pioneered an innovative data refresh protocol using Tableau Prep that delivered comprehensive cost-benefit analysis for new marketing software acquisition, directly informing strategic technology investment decisions.</li>
+                <li>Analyzed 3 million Tennessee store transactions using R & Snowflake to conduct market basket analysis, uncovering critical association rules and customer purchasing behavior patterns during COVID-19.</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2020 – August 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Oak Ridge Institute for Science and Education Fellow</h3>
+              <div class= "subheading mb-3"><p>Centers for Disease Control and Prevention
+                <br>
+                Quality and Safety Systems Branch
+              </p></div>
+              <ul>
+                <li>Lead investigator for a systematic review/meta analysis to discover effective practices to reduce hemolysis in emergency departments.</li>
+                <li>Supported a secondary systematic review/meta analysis to discover effective practices to reduce inappropriate coagulation testing.</li>
+                <li>Reviewed and screened several hundred peer reviewed articles for topic relevance.</li>
+                <li>Abstracted data from roughly sixty articles for information.</li>
+                <li>Assisted on content for education modules to train laboratorians on LMBP systematic review methodology.</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2018 – September 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Oak Ridge Institute for Science and Education Fellow</h3>
+              <div class= "subheading mb-3"><p>Centers for Disease Control and Prevention
+                <br>
+                Laboratory Research and Evaluations Branch
+              </p></div>
+              <ul>
+                <li>Conducted a literature review on methodologies to reduce hemolysis in emergency departments and aiming to reduce inappropriate coagulation testing in all healthcare settings.</li>
+                <li>Analyzed proficiency testing (PT) data from the Centers for Medicare and Medicaid database for all laboratories in the US from 1994-2016.</li>
+                <ku>Created data visualizations of the unsuccessful PT rate for non-waived testing.</li>
+              </ul>
+              
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2017 – February 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Guest Researcher</h3>
+              <div class= "subheading mb-3"><p>Centers for Disease Control and Prevention
+                <br>
+                Laboratory Practice Standards Branch
+              </p></div>
+              <ul>
+                <li>Cleaned and wrangled 81 non-waived PT analyte data using excel.</li>
+                <li>Used excel pivot tables to organize and visualize all non-waived PT analytes unsuccessful testing trend from 1994-2016 by laboratory type.</li>
+                <li>Presented trend analysis of unsuccessful PT testing rates across US laboratories to senior branch leadership.</li>
+              </ul>
+              </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2017 – August 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Health Promotion and Behavior Intern</h3>
+              <div class= "subheading mb-3"><p>Centers for Disease Control and Prevention
+                <br>
+                Laboratory Practice Standards Branch
+              </p></div>
+              <ul>
+                <li>Created informative flyers to promote healthy diet and exercise behaviors.</li>
+                <li>Disseminated health information at weekly team meetings.</li>
+                <li>Worked with an in office gym to promote and increase gym usage.</li>
+                <li>Assisted on data collection of non-waived PT analytes.</li>
+                <li>Conducted a literature search on unsuccessful PT trends in the US.</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2017 – May 2017</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+      <!-- EDUCATION AND CERTIFICATION -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education &amp; Certification</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Vanderbilt University</h3>
+              <div class="subheading mb-3">MS in Data Science</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2019 - May 2021</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Georgia Tech (Georgia Institute of Technology)</h3>
+              <div class="subheading mb-3">Certificate in Data Science and Data Analytics</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2018 - November 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Georgia</h3>
+              <div class="subheading mb-3">BS in Health Promotion and Behavior</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2013 - May 2017</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+      <!-- SKILLS -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="fa-ul mb-0">
+            <li>Python (numpy, pandas, matplotlib, scikit-learn, keras, tensorflow, pymongo, sqlalchemy, beautifulsoup, pyspark)</li>
+            <li>JavaScript (d3.js, leaflet.js, plotly.js)</li>
+            <li>R</li>
+            <li>Tableau</li>
+            <li>Version control(Git)</li>
+            <li>MongoDB</li>
+            <li>mySQL</li>
+            <li>Excel VBA</li>
+            <li>HTML & CSS</li>
+            <li>Flask</li>
+          </ul>
+        </div>
+        <div class="subheading mb-3">Technical</div>
+        <ul class="fa-ul mb-0">
+          <li>Data analysis</li>
+          <li>Data wrangling</li>
+          <li>Data storage and retrieval</li>
+          <li>Data visualization</li>
+          <li>Machine Learning (classification and regression)</li>
+          <li>MapReduce</li>
+        </ul>
+      </section>
+
+      <hr class = "m-0"> 
+      <!-- PROJECTS -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+          <!-- <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Project Title</h3>
+              <div>
+                <p>Description of project</p>
+                <a target="_blank"  href="#">View Project Repo</a>
+                 <div clas="col-md-6">
+                  <div class="thumbnail">
+                    <a target="" href="#"><img src="#"></a>
+                  <div class="resume-content mr-auto">Captions here
+                  </div>
+                </div>
+              </div> 
+              <div clas="col-md-6">
+                <div class="thumbnail">
+                  <a target="_blank" href="#"><img src="#"></a>
+                <div class="resume-content mr-auto">Captions here
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+          <!-- Project 1 -->
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Twitter User Sentiment Analysis</h3>
+              <div>
+                <p>I was curious about the sentiment of different news organizations' twitter accounts (i.e. how positive, negative, or neutral their tweets are). For this project, I used tweepy, a python library, to access Twitter's API. Using tweepy, I collected 100 of the most recent tweets from 5 different news organization. A VANDER sentiment analysis was used analyze each individual tweet and the sentiment score was plotted using matplotlib in python. </p>
+                <a target="_blank" href="https://github.com/lnguyen1021/social_analytics">View Project Repo</a>
+                <!-- SS here -->
+                <div clas="col-md-2">
+                  <div class="thumbnail">
+                    <svg width='450' height='300'>
+                        <image width='450' height='300' xlink:href="img/projects/twitter/news_org_100_recent_tweets.png">
+                    </svg>
+                  <div class="resume-content mr-auto"><a target="_blank" href="img/projects/twitter/news_org_100_recent_tweets.png">Scatter plot of ea ch news organization's sentiment score per tweet</a>
+                  </div>
+                </div>
+              </div>
+              <!-- SS here -->
+              <div clas="col-md-2">
+                <div class="thumbnail">
+                  <svg width='450' height='300'>
+                      <image width='450' height='300' xlink:href="img/projects/twitter/news_org_overall_sentiment.png">
+                  </svg>
+                <div class="resume-content mr-auto"><a target="_blank" href="img/projects/twitter/news_org_overall_sentiment.png">Average news organization compound sentiment score</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+            <!-- Project 2 -->
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Belly Button Biodiversity</h3>
+                <div>
+                  <p>Using a dataset published by <a target="_blank" href="http://robdunnlab.com/projects/belly-button-biodiversity/">Rob Dunn,</a> a simple dashboard was created using a sqlite database, flask, javascript, and python. The task was to query the database and create a piechart and bubble chart of the sample data using plotly.js.</p>
+                  <a target="_blank"  href="https://github.com/lnguyen1021/BiodiversityDashboard">View Project Repo</a>
+                  <!-- SS here -->
+                  <div clas="col-md-6">
+                    <div class="thumbnail">
+                      <svg width='450' height='300'>
+                          <image width='450' height='300' xlink:href="img/projects/biodiversity/biodiversity_dashboard.png">
+                      </svg>
+                    <div class="resume-content mr-auto"><a target='_blank' href ='img/projects/biodiversity/biodiversity_dashboard.png'>Belly Button Diversity Dashboard</a></div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Project 3 -->
+          <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Machine Learning using a Hepatitis Dataset</h3>
+                <div>
+                  <p>For this project, we used a <a target="_blank" href = "
+                    https://www.openml.org/d/269">dataset</a> from openml.org with twenty features and one million entries to train our model to predict whether an individual who is hepatitis positive is at risk for a life-threatening condition. We were able to train the model using tensorflow, keras, and scikit-learn. After exploring several algorithms, we found a random forest produced the highest accuracy score of 93%. Using tableau desktop, we created a simple tool that allows hepatitis positive users to input several fields and will predict an individuals risk of a life-threatening condition.</p>
+                  <a target="_blank"  href="https://github.com/xaskoiking/Team_Red_Zone_Final_Project">View Project Repo</a>
+                  <!-- SS here -->
+                  <div clas="col-md-6">
+                    <div class="thumbnail">
+                        <svg width='450' height='300'>
+                            <image width='450' height='300' xlink:href="img/projects/ml/ml.png">
+                            </svg>
+                    <div class="resume-content mr-auto"><a target='_blank' href='img/projects/ml/ml.png'>Predictive tool created using TableauDesktop</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- SS here -->
+                <!-- <div clas="col-md-6">
+                  <div class="thumbnail">
+                    <a target="_blank" href="#"><img src="#"></a>
+                  <div class="resume-content mr-auto">Captions here
+                  </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0"><a target="_blank" href="https://github.com/lnguyen1021?tab=repositories">Click here for more projects</a></h4>
+            </div>
+          </div>
+          <!-- Project templates -->
+<!--        
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Project Title</h3>
+              <div>
+                <p>Description of project</p>
+                <a target="_blank"  href="#">View Project Repo</a> -->
+                <!-- SS here uncomment below-->
+                <!-- <div clas="col-md-6">
+                  <div class="thumbnail">
+                    <a target="" href="#"><img src="#"></a>
+                  <div class="resume-content mr-auto">Captions here
+                  </div>
+                </div>
+              </div> -->
+              <!-- SS here uncomment below-->
+              <!-- <div clas="col-md-6">
+                <div class="thumbnail">
+                  <a target="_blank" href="#"><img src="#"></a>
+                <div class="resume-content mr-auto">Captions here
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <hr class="m-0">
+      <!-- PUBLICATIONS -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+        <div class="my-auto">
+          <h2 class="mb-5">Publications</h2>
+            <p>
+              <h5>Accepted Manuscript by Journal of the National Cancer Institute (JNCI)
+              </h5>
+              Improving Cervical Precancer Surveillance: Validity of Claims-Based Prediction Models in ICD-9 and ICD-10 eras
+              <br>
+              JZ Shing, MR Griffin, LD Nguyen, JC Slaughter, EF Mitchel, M Pemmaraju, AB Rentuza, PC Hull
+              <br>
+              <a target = "_blank" href="https://academic.oup.com/jncics/advance-article/doi/10.1093/jncics/pkaa112/6055550?login=true">Link to PDF</a>
+            </p>
+            <p>
+              <h5>Abstract published by American Association of Clinical Chemistry's 2018 Annual Meeting:
+              </h5>
+              US Laboratories Proficiency Testing Performances from 1994-2016: Results reported to the Centers for Medicare & Medicaid Services
+              <br>
+              LD Nguyen, G Mitchell, J Astles, L Fan, Y Xia
+              <br>
+              <a target = "_blank" href="https://www.aacc.org/science-and-practice/annual-meeting-abstracts-archive">Link to PDF</a>
+            </p>
+            <p>
+              <h5>Abstract published by American Association of Clinical Chemistry's 2018 Annual Meeting:
+              </h5>
+              Comparison of Proficiency Testing Performance for Analytes of a Complete Metabolic Panel: Hospital Laboratories to All Other Testing Sites
+              <br>
+               G Mitchell, LD Nguyen, Y Xia
+              <br>
+              <a target = "_blank" href="https://www.aacc.org/science-and-practice/annual-meeting-abstracts-archive">Link to PDF</a>
+            </p>
+        </div>
+
+      </section>
+
     </div>
-    <div class="col-md-4">
-        <h3>Recent Projects</h3>
-        <p>Explore some of my recent technical projects, including machine learning solutions, data visualization dashboards, and more.</p>
-        <a href="{{ site.baseurl }}/projects" class="btn btn-outline-primary">View Projects</a>
-    </div>
-    <div class="col-md-4">
-        <h3>Contact Me</h3>
-        <p>Interested in collaborating or learning more about my work? Get in touch!</p>
-        <a href="{{ site.baseurl }}/contact" class="btn btn-outline-primary">Contact</a>
-    </div>
-</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
